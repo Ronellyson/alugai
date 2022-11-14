@@ -1,0 +1,54 @@
+{
+  "project_info": {
+    "project_number": "641596225873",
+    "project_id": "alugai-d9e95",
+    "storage_bucket": "alugai-d9e95.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:641596225873:android:8082f24eca3d08f4fefb70",
+        "android_client_info": {
+          "package_name": "com.example.alugai"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "641596225873-tbc22uds2rn9qbhbhabb10qo9sgruv5a.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.alugai",
+            "certificate_hash": "995aa1649ab5f41b4bc6b7519bed9e1debce7fc4"
+          }
+        },
+        {
+          "client_id": "641596225873-c6d25gkvar189vhlc4c231sbqtki8t2g.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBm_2QWNPMTqkWs_80cxQRgtxyAlCfx9Nc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "641596225873-c6d25gkvar189vhlc4c231sbqtki8t2g.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "641596225873-o6g1i6vloa3r8pni8imk514r643n1jj2.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.alugai"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
