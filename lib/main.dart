@@ -4,7 +4,6 @@ import 'package:alugai/app_widget.dart';
 import 'package:flutter/material.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'firebase_options.dart';
-import 'package:flutter/services.dart';
 
 void main() {
   runApp(AppFirebase());
@@ -17,7 +16,7 @@ class AppFirebase extends StatefulWidget {
 
 class _AppFirebaseState extends State<AppFirebase> {
   final Future<FirebaseApp> _initialization = Firebase.initializeApp(
-    options: DefaultFirebaseOptions.android,
+    options: DefaultFirebaseOptions.currentPlatform,
   );
 
   @override

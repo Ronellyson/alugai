@@ -2,11 +2,14 @@
 
 import 'package:alugai/shared/auth/auth_controller.dart';
 import 'package:alugai/shared/models/user_model.dart';
+import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:google_sign_in/google_sign_in.dart';
+import 'package:firebase_auth/firebase_auth.dart';
 
 class LoginController {
-  final authController = AuthController();
+  final AuthController authController = AuthController();
+
   Future<void> googleSignIn(BuildContext context) async {
     GoogleSignIn _googleSignIn = GoogleSignIn(
       scopes: [
@@ -15,6 +18,15 @@ class LoginController {
     );
     try {
       final response = await _googleSignIn.signIn();
+      final GoogleSignInAuthentication googleAuth = await response!.authentication;
+      final OAuthCredential googleCredential = GoogleAuthProvider.credential(
+        accessToken: googleAuth.accessToken,
+        idToken: googleAuth.idToken,
+      );
+
+      final UserCredential googleUserCredential =
+      await FirebaseAuth.instance.signInWithCredential(googleCredential);
+
       final user = UserModel(
         name: response!.displayName!,
         photoURL: response.photoUrl,
