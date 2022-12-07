@@ -1,10 +1,12 @@
-// ignore_for_file: unnecessary_import, library_private_types_in_public_api
+// ignore_for_file: unnecessary_import, library_private_types_in_public_api, prefer_const_constructors
 
+import 'package:alugai/firebase_options.dart';
 import 'package:alugai/shared/modules/login/login_controller.dart';
 import 'package:alugai/shared/themes/app_colors.dart';
 import 'package:alugai/shared/themes/app_images.dart';
 import 'package:alugai/shared/widgets/social_login/social_login_button.dart';
 import 'package:animated_card/animated_card.dart';
+import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 
@@ -19,7 +21,7 @@ class _LoginPageState extends State<LoginPage> {
   final controller = LoginController();
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
+   return Scaffold(
         backgroundColor: AppColors.background,
         body: Stack(
           children: [
@@ -39,7 +41,7 @@ class _LoginPageState extends State<LoginPage> {
                 ),
               ),
             ),
-            Center(child: Image.asset(AppImages.logoFull)),
+            Center(child: Image.asset(AppImages.logo)),
           ],
         ));
   }

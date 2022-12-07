@@ -1,13 +1,16 @@
+// ignore_for_file: prefer_const_constructors
+
 import 'package:alugai/shared/modules/home/home_page.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
-import 'shared/modules/login/login_page.dart';
-import 'shared/modules/splash/splash_page.dart';
-import 'shared/themes/app_colors.dart';
+import '../shared/modules/chat/chat_page.dart';
+import '../shared/modules/login/login_page.dart';
+import '../shared/modules/splash/splash_page.dart';
+import '../shared/themes/app_colors.dart';
 
 class AppWidget extends StatelessWidget {
-  AppWidget() {
+  AppWidget({super.key}) {
     SystemChrome.setPreferredOrientations([
       DeviceOrientation.portraitDown,
       DeviceOrientation.portraitUp,
@@ -26,7 +29,8 @@ class AppWidget extends StatelessWidget {
       routes: {
         "/splash": (context) => SplashPage(),
         "/home": (context) => HomePage(),
-        "/login": (context) => LoginPage()
+        "/login": (context) => LoginPage(),
+        "/chat": (context) => ChatPage(),
       },
     );
   }

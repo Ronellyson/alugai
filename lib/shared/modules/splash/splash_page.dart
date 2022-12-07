@@ -23,8 +23,11 @@ class SplashPage extends StatelessWidget {
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              Center(
-                child: Image.asset(AppImages.logoFull),
+              Padding(
+                padding: const EdgeInsets.all(12.0),
+                child: Center(
+                  child: Image.asset(AppImages.logo),
+                ),
               ),
               CircularProgressIndicator(
                 color: AppColors.primary,

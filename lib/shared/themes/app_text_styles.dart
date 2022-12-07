@@ -5,14 +5,14 @@ import 'package:google_fonts/google_fonts.dart';
 
 class TextStyles {
   static final titleHome = GoogleFonts.lexendDeca(
-    fontSize: 32,
+    fontSize: 26,
     fontWeight: FontWeight.w600,
-    color: AppColors.heading,
+    color: AppColors.primary,
   );
   static final titleRegular = GoogleFonts.lexendDeca(
     fontSize: 20,
     fontWeight: FontWeight.w400,
-    color: AppColors.background,
+    color: AppColors.secondary,
   );
   static final titleBoldHeading = GoogleFonts.lexendDeca(
     fontSize: 20,
@@ -25,12 +25,12 @@ class TextStyles {
     color: AppColors.background,
   );
   static final titleListTile = GoogleFonts.lexendDeca(
-    fontSize: 17,
+    fontSize: 18,
     fontWeight: FontWeight.w600,
-    color: AppColors.heading,
+    color: AppColors.text,
   );
   static final trailingRegular = GoogleFonts.lexendDeca(
-    fontSize: 16,
+    fontSize: 18,
     fontWeight: FontWeight.w400,
     color: AppColors.heading,
   );
@@ -60,7 +60,7 @@ class TextStyles {
     color: AppColors.background,
   );
   static final buttonBoldPrimary = GoogleFonts.inter(
-    fontSize: 15,
+    fontSize: 24,
     fontWeight: FontWeight.w700,
     color: AppColors.primary,
   );

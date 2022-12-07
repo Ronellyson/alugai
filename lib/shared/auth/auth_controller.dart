@@ -1,3 +1,5 @@
+// ignore_for_file: prefer_const_constructors, use_build_context_synchronously
+
 import 'package:alugai/shared/models/user_model.dart';
 import 'package:flutter/widgets.dart';
 import 'package:shared_preferences/shared_preferences.dart';
@@ -5,7 +7,7 @@ import 'package:shared_preferences/shared_preferences.dart';
 class AuthController {
   UserModel? _user;
 
-  UserModel get user => _user!;
+  UserModel? get user => _user;
 
   void setUser(BuildContext context, UserModel? user) {
     if (user != null) {
@@ -32,6 +34,7 @@ class AuthController {
       return;
     } else {
       setUser(context, null);
+      return;
     }
   }
 }
