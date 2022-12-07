@@ -38,7 +38,7 @@ class _HomePageState extends State<HomePage> {
     return Scaffold(
       appBar: AppBar(
         title: Center(child: Image.asset(AppImages.logo,scale: 1.5,)),
-        shadowColor: AppColors.primary,
+        backgroundColor: AppColors.primary,
       ),
       body: Center(
         child: FutureBuilder<List<Immobile>>(

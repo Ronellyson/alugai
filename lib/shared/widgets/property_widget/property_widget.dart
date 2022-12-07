@@ -70,8 +70,8 @@ class PropertyWidget extends StatelessWidget {
                       decoration: BoxDecoration(
                         gradient: LinearGradient(
                           colors: [
-                            appState.colorPrimary,
-                            appState.colorSecundary,
+                            AppColors.primary,
+                            AppColors.secondary,
                           ],
                         ),
                       ),
@@ -131,17 +131,6 @@ class PropertyWidget extends StatelessWidget {
                           ),
                         ],
                       ),
-                    ),
-                    Row(
-                      children: <Widget>[
-                        _buildBottom(
-                            FontAwesomeIcons.shareAlt,
-                            appState.colorPrimary,
-                            appState.colorSecundary,
-                            context),
-                        _buildBottom(FontAwesomeIcons.calendarAlt,
-                            Color(0xFF98b4f9), Color(0xFF798CF5), context),
-                      ],
                     ),
                   ],
                 ),
